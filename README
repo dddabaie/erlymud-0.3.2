@@ -1,6 +1,8 @@
 <!-- -*- markdown -*- -->
 
 -------------------2019.06.30----------------
+0.3.2 is better than 0.3.1 
+
 1/
 $ cd rebar-1.0
 $ ./bootstrap
@@ -21,7 +23,7 @@ $ telnet 192.168.1.99 2155
 (3)rebar2,rebar3,work wrong!
 (4)erlymud-0.3.1.rel.20190630 is ok!
 
--------------------end-----------------------
+-------------------end-----------------------     
 # ErlyMUD
 
 ErlyMUD is a rather minimalistic MUD server, written in Erland and making
