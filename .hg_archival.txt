@@ -1,0 +1,4 @@
+repo: faacab38ea4428b7c094271cd32dbc3619d4993d
+node: 4c5d0d0ab19a02637ec3208fa48eb323641a6da8
+branch: default
+tag: erlymud-0.3.2

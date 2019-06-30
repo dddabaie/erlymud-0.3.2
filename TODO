@@ -1,0 +1,34 @@
+ErlyMUD TODO
+============
+
+0.3.3
+-----
+* Work on cmd_* implementations to improve error handling etc
+* Add room / item building commands
+
+Future
+------
+* Put new parser in place
+* Use 'areas' for organizing rooms and objects
+* Move save file handling to em_game and put files in a better location,
+  so they won't be tied to the specific version of the erlymud app
+* How to make sure we always have a 'live' em_conn waiting for a connection?
+* Add 'destroy' command for destroying objects in own inventory?
+* Add 'clone' command for instantiating object templates
+* Shutdown / reboot command
+* Admin permissions to be able to shutdown / reboot, etc
+* Improve connection lifecycle;
+  - If an em_living dies;
+    * Then em_user can inform about it, then run a do_login() again to get
+      a new living
+    * Also the em_room must clean out the original living id
+    * Not to mention em_game, same there?
+  - If an em_user dies;
+    * Then em_conn can create a new one and put it into login phase, just
+      like when someone connects
+    * The em_game should clean up also
+    * The em_living should get a timer, say 60 seconds, and if not reconnected
+      after that time it should stop
+    * When user logs in again, reconnect it to the em_living and the game
+* Idle timer in 'who' list
+* Put the {In, Out} "client" Pid pair into a record definition for clarity?
