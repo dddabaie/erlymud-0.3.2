@@ -8,23 +8,23 @@
 $ cd rebar-1.0 
 $ ./bootstrap 
 #### 2/
-- $ cp rebar path/erlymud
-- $ chmod 777 rebar
-- $ ./rebar compile
-- $ rm erlymud-0.3.2.rel
-- $ mv erlymud-0.3.2.rel.20190630 erlymud-0.3.2.rel
-- $ erl -pa lib/erlymud/ebin/
-- 1> systools:make_script("erlymud-0.3.2", [local]).
-- 2> q().
-- $ erl -boot ./erlymud-0.3.2
-- $ telnet 192.168.1.99 2155
-- 3/
-- (1)freebsd 11.2
-- (2)erlang-19.3.6.12_1,4
-- (3)rebar2,rebar3,work wrong!
-- (4)erlymud-0.3.1.rel.20190630 is ok!
+$ cp rebar path/erlymud
+$ chmod 777 rebar
+$ ./rebar compile
+$ rm erlymud-0.3.2.rel
+$ mv erlymud-0.3.2.rel.20190630 erlymud-0.3.2.rel
+$ erl -pa lib/erlymud/ebin/
+1> systools:make_script("erlymud-0.3.2", [local]).
+2> q().
+$ erl -boot ./erlymud-0.3.2
+$ telnet 192.168.1.99 2155
+3/
+(1)freebsd 11.2
+(2)erlang-19.3.6.12_1,4
+(3)rebar2,rebar3,work wrong!
+(4)erlymud-0.3.1.rel.20190630 is ok!
 
--------------------end-----------------------     
+**-------------------end----------------------- **    
 # ErlyMUD
 
 ErlyMUD is a rather minimalistic MUD server, written in Erland and making
