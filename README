@@ -35,9 +35,9 @@ $ telnet 192.168.1.99 2155
 
 (2)erlang-19.3.6.12_1,4
 
-(3)rebar2,rebar3,work wrong!
+(3)rebar3 works well! output files in _build.
 
-(4)erlymud-0.3.1.rel.20190630 is ok!
+(4)erlymud-0.3.2.rel.20190630 is ok!
 
 
 **-------------------end-----------------------**    
